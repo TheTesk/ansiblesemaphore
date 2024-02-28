@@ -16,7 +16,7 @@
   become: true
   tasks:
 
-  - name: Installing apache2 and php packages
+  - name: Removing apache2 and php packages
     tags: apache,apache2,debian
     apt:
       name:
@@ -30,7 +30,7 @@
   become: true
   tasks:
 
-  - name: Installing mariadb package
+  - name: Removing mariadb package
     tags: db,mariadb,debian
     apt:
       name:
@@ -43,7 +43,7 @@
   become: true
   tasks:
 
-  - name: Installing samba package
+  - name: Removing samba package
     tags: samba,debian
     apt:
       name:
